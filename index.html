@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,55 @@
     <link rel="stylesheet" href="index.css">
     <title>Bookmark App</title>
 </head>
+
 <body>
     <header>
         <h1>BookMark App</h1>
     </header>
-    <button id="add-bookmark-button" type="submit">Add Bookmark</button>
-    <label>Filter</label>
-    <select id="filter-bookmark-rating">
-        <option value="all">all</option>
-        <option value="5">5</option>
-        <option value="4">4</option>
-        <option value="3">3</option>
-        <option value="2">2</option>
-        <option value="1">1</option>
-    </select><br>
-    
-    <form id="add-new-bookmark">
-        
-        <input id="bookmark-title" class="new-bookmark-form" placeholder="title">
-        <input id="bookmark-url" class="new-bookmark-form" placeholder="url"><br>
-        <input id="bookmark-description" class="new-bookmark-form" placeholder="description">
-        <select id="bookmark-rating" placeholder="rating" class="new-bookmark-form">
-            <option selected disabled>Rating</option>
+    <div id="form-watch">
+        <button id="click-to-toggle-form" class="add-bookmark-button" type="submit">Add Bookmark</button><br>
+        <label>Filter</label>
+        <select id="filter-bookmark-rating">
+            <option value="all">all</option>
             <option value="5">5</option>
             <option value="4">4</option>
             <option value="3">3</option>
             <option value="2">2</option>
             <option value="1">1</option>
-        </select>
-        <input type="submit" id="submit-new-bookmark" value="Submit">
-    </form>
+        </select><br>
+
+        <form id="add-new-bookmark" class="hide-form">
+
+            <input id="bookmark-title" class="new-bookmark-form" placeholder="title">
+            <input id="bookmark-url" class="new-bookmark-form" placeholder="url"><br>
+            <input id="bookmark-description" class="new-bookmark-form" placeholder="description">
+            <select id="bookmark-rating" placeholder="rating" class="new-bookmark-form">
+                <option selected disabled>Rating</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+            <input type="submit" id="submit-new-bookmark" value="Submit">
+        </form>
+
+    </div>
 
     <div>
-    
+
         <ul id="new-bookmark-list"></ul>
         </ul>
-        
+
     </div>
 
 
 
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="store.js"></script>
-<!-- <script type="text/javascript" src="api.js"></script> -->
-<script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="store.js"></script>
+    <!-- <script type="text/javascript" src="api.js"></script> -->
+    <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>
