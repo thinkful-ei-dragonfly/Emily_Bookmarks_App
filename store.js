@@ -132,7 +132,7 @@ Render Function
 function bookmarkToHtml(bookmark) {
   let bookmarkHTML =
     `<li class="click-to-hide-li border-style">
-            <h3 class="click-to-hide">${bookmark.title}</h3>
+            <h3 class="click-to-hide">${bookmark.title} | ${bookmark.rating} </h3>
             <p class="hide-this hidden">${bookmark.description}</p>
             <a href=${bookmark.url} class="hide-this hidden"><button>Visit</button></a>
             <button data-id="${bookmark.id}" class="delete-button hide-this hidden">Delete</button>
@@ -154,8 +154,8 @@ function bookmarkToHtml(bookmark) {
             <input  type="submit" id="submit-new-bookmark" value="Update">
 
           </form>
-
-          <p>${bookmark.rating}</p>
+          
+          
             
       </li>`;
   return bookmarkHTML;
