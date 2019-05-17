@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <title>Bookmark App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -30,12 +31,15 @@
                 <option value="1">1</option>
             </select><br>
 
-            <form id="add-new-bookmark" class="hide-form hidden">
+            <form id="add-new-bookmark" class="hide-form hidden style-form">
 
-                <input id="bookmark-title" class="new-bookmark-form" placeholder="title">
-                <input id="bookmark-url" class="new-bookmark-form" placeholder="url"><br>
-                <input id="bookmark-description" class="new-bookmark-form" placeholder="description">
-                <select id="bookmark-rating" placeholder="rating" class="new-bookmark-form">
+                <input id="bookmark-title" class="new-bookmark-form form-display" placeholder="title">
+                
+                <input id="bookmark-url" class="new-bookmark-form form-display" placeholder="https://www.google.com">
+                
+                <input id="bookmark-description" class="new-bookmark-form form-display" placeholder="description">
+                <div class="url-title-error hidden"></div>
+                <select id="bookmark-rating" placeholder="rating" class="new-bookmark-form rating-style">
                     <option selected disabled>Rating</option>
                     <option value="5">5</option>
                     <option value="4">4</option>
@@ -43,15 +47,15 @@
                     <option value="2">2</option>
                     <option value="1">1</option>
                 </select>
-                <input class="style-submit-button" type="submit" id="submit-new-bookmark" value="Submit">
+                <input class="style-submit-button " type="submit" id="submit-new-bookmark" value="Submit">
             </form>
 
 
 
 
-            <div class="position">
+            <div class="position style-new-bookmarks">
 
-                <ul id="new-bookmark-list" class="myList"></ul>
+                <ul id="new-bookmark-list" class="myList "></ul>
                 </ul>
 
             </div>
@@ -62,8 +66,7 @@
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="store.js"></script>
-    <!-- <script type="text/javascript" src="api.js"></script> -->
+    <script type="text/javascript" src="api.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 
